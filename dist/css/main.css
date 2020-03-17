@@ -1,0 +1,13 @@
+body {
+  background: #ce9696; }
+
+img {
+  width: 200px;
+  height: 300px; }
+
+.container {
+  font-size: 20px;
+  width: 500px;
+  height: 300px;
+  background: url(http://www.test.com/img/c20e1964.test.jpg) no-repeat; }
+
