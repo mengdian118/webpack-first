@@ -74,12 +74,12 @@ module.exports = {
                 test:/\.(png|jpg|gif|svg|jpeg)$/,
                 //为了减少网络请求 对小图片做优化：当我们图片小于多少k的时候 用base64来转化，否者使用file-loader产出真实图片
                 use:{
-                     loader:'file-loader',
+                     loader:'url-loader',
                      options:{
                          name:'[hash:8].[name].[ext]',
                          limit:320*1024, //我这里因为引入图片相对大，所以这里为了测试能看到base64转化效果 用了较大的限制值
                         //  publicPath:'http://www.test.com', 单独针对图片添加前缀cdn路径
-                         outputPath:'/img/',
+                         outputPath:'img/',
                          esModule:false
                         }
                 }
